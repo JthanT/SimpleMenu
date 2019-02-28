@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SimpleMenu" x:Class="SimpleMenu.MainPage">
-    <StackLayout>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:SimpleMenu" 
+             x:Class="SimpleMenu.MainPage">
+    
+    <StackLayout Padding="0, 100, 0, 0" Spacing="30">
         
-        <Image Source="profile_picture_symbol.jpg"/>
+        <Image x:Name="profileImage" 
+               Source="profile_picture_symbol.jpg" />
         
         <Button Text="Login"
-                Clicked="Handle_Clicked" />
+                Clicked="Login_Clicked" />
         
         <Button Text="Create Account"
-                Clicked="Handle_Clicked_1" />
+                Clicked="Create_Clicked" />
         
     </StackLayout>
+    
 </ContentPage>
